@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 
 const store = createStore(rootReducer);
+// See the current state of the store 
 store.subscribe(() => console.log('store', store.getState()))
 
 ReactDOM.render(
